@@ -28,6 +28,8 @@ function Login() {
     .then(res => {
       SetLoginResult('OK');
       console.log(res.data);
+      //cookie get role check
+      
       navigate('/member');
       navigate('/member', {replace: true});
     })
